@@ -762,3 +762,54 @@ body {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
 }
+/* === FIX BLACK SCREEN ON MOBILE === */
+
+/* Ensure preloader hides completely */
+.preloader {
+  animation: fadeOut 2.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; visibility: visible; }
+  90% { opacity: 0; }
+  100% { opacity: 0; visibility: hidden; display: none; z-index: -1; }
+}
+
+/* Move spotlight and film-grain behind all content */
+.spotlight,
+.film-grain {
+  z-index: 0;
+}
+
+/* Lift all main sections above overlays */
+header, .hero, .product-scroll, .featured, footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Prevent body duplicate conflicts */
+html, body {
+  background: radial-gradient(circle at top, #0a0000, #000);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Mobile-specific fix: remove sticky overlap */
+@media (max-width: 768px) {
+  .navbar, header {
+    position: relative;
+  }
+
+  .neon-logo {
+    font-size: 2.8rem;
+    margin-top: 5vh;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+}

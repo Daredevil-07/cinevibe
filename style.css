@@ -69,7 +69,7 @@ body {
 /* Hero Section */
 .hero {
   height: 100vh;
-  /* background: url('https://m.media-amazon.com/images/M/MV5BNjk0MzkxOTAtNTNkNi00NDdhLTg4YmYtMzc2MWZlNjgxMTA5XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg') center/cover no-repeat; */
+ background: url('https://m.media-amazon.com/images/M/MV5BNjk0MzkxOTAtNTNkNi00NDdhLTg4YmYtMzc2MWZlNjgxMTA5XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

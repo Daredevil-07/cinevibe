@@ -813,3 +813,85 @@ html, body {
     padding: 60px 20px;
   }
 }
+.cinevibe-footer {
+  background: #000;
+  color: #ddd;
+  font-family: 'Montserrat', sans-serif;
+  padding: 50px 20px 10px;
+  text-align: center;
+  border-top: 2px solid red;
+}
+
+.cinevibe-footer .footer-top h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px red;
+}
+
+.red-neon {
+  color: #ff2e2e;
+  text-shadow: 0 0 8px #ff2e2e, 0 0 16px #ff0000;
+}
+
+.cinevibe-footer .social-icons a {
+  color: #ff2e2e;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.cinevibe-footer .social-icons a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px red, 0 0 20px red;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer-links .column {
+  flex: 1 1 200px;
+  margin: 20px;
+  text-align: left;
+}
+
+.footer-links h3 {
+  color: #ff2e2e;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px red;
+}
+
+.footer-links a {
+  display: block;
+  color: #aaa;
+  margin: 5px 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px red;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #222;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links .column {
+    margin: 10px 0;
+  }
+}

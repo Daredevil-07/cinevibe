@@ -393,6 +393,44 @@ footer {
   font-size: 0.8rem;
   color: #666;
 }
+/* === POPUP MODAL === */
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  background: #111;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 71, 71, 0.3);
+  animation: fadeIn 0.5s ease;
+}
+
+.popup-content h2 {
+  color: #ff4747;
+  margin-bottom: 15px;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.popup-content p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
 
 /* ANIMATIONS */
 @keyframes fadeIn {

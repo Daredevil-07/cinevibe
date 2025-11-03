@@ -24,7 +24,7 @@
   <div class="spotlight"></div>
   <div class="film-grain"></div>
 
-  <section class="hero">
+  <section class="hero-check">
     <div class="hero-content">
       <h1>Secure <span>Checkout</span></h1>
       <p>Complete your order safely and swiftly.</p>
@@ -32,14 +32,20 @@
   </section>
 
   <section class="checkout">
-    <form action="index.html" method="get">
+    <form action="#popup" method="get">
       <input type="text" placeholder="Full Name" required>
       <input type="email" placeholder="Email Address" required>
       <input type="text" placeholder="Shipping Address" required>
       <button type="submit" class="btn">Place Order</button>
     </form>
   </section>
-
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>✅ Order Placed!</h2>
+      <p>Your order has been accepted successfully.</p>
+      <a href="index.html" class="btn close-btn">Continue Shopping</a>
+    </div>
+  </div>
   <footer>
     <p>© 2025 CineVibe Studios. All Rights Reserved.</p>
   </footer>
